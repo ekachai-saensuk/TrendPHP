@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เข้าสู่ระบบ</title>
+</head>
+<body>
+    <h2>กรุณาเข้าสู่ระบบ</h2>
+    <!-- action="check.php" หมายถึงเมื่อกดส่ง จะส่งข้อมูลไปให้ไฟล์ check.php ประมวลผล -->
+    <form action="check.php" method="POST">
+        <label>ชื่อผู้ใช้งาน:</label><br>
+        <input type="text" name="user" required><br><br>
+        
+        <label>รหัสผ่าน:</label><br>
+        <input type="password" name="pass" required><br><br>
+        
+        <button type="submit">ล็อกอิน</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิก</title>
+</head>
+<body>
+    <h2>สมัครสมาชิกใหม่</h2>
+    <form action="save_register.php" method="POST">
+        <label>ชื่อผู้ใช้งาน (Username):</label><br>
+        <input type="text" name="user" required><br><br>
+        
+        <label>อีเมล (Email):</label><br>
+        <input type="email" name="email" required><br><br>
+        
+        <label>รหัสผ่าน (Password):</label><br>
+        <input type="password" name="pass" required><br><br>
+        
+        <button type="submit">ยืนยันการสมัคร</button>
+    </form>
+    <br>
+    <a href="login.html">มีบัญชีอยู่แล้ว? ไปหน้าล็อกอิน</a>
+</body>
+</html>
