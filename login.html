@@ -4,113 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เข้าสู่ระบบ</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Helvetica Neue', Arial;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .login-container {
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-            padding: 2.5rem;
-            width: 100%;
-            max-width: 400px;
-            margin: 20px;
-        }
-
-        h2 {
-            color: #333333;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            font-size: 1.75rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #666666;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid #dddddd;
-            border-radius: 6px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            outline: none;
-        }
-
-        input[type="text"]:focus,
-        input[type="password"]:focus {
-            border-color: #764ba2;
-            box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.2);
-        }
-
-        button {
-            width: 100%;
-            padding: 0.75rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            border-radius: 6px;
-            color: white;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.1s ease, opacity 0.2s ease;
-            margin-top: 0.5rem;
-        }
-
-        button:hover {
-            opacity: 0.9;
-        }
-
-        button:active {
-            transform: scale(0.98);
-        }
-
-        .register-link {
-            text-align: center;
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
-        }
-
-        .register-link a {
-            color: #764ba2;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .register-link a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <!-- ดึงไฟล์ CSS ส่วนกลางมาใช้งาน -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="login-container">
+    <div class="auth-container">
         <h2>กรุณาเข้าสู่ระบบ</h2>
         
-        <!-- action="check.php" ส่งข้อมูลไปให้ไฟล์ check.php ประมวลผล -->
         <form action="check.php" method="POST">
             <div class="form-group">
                 <label for="user">ชื่อผู้ใช้งาน:</label>
@@ -125,7 +26,7 @@
             <button type="submit">ล็อกอิน</button>
         </form>
 
-        <div class="register-link">
+        <div class="auth-link">
             ยังไม่มีบัญชี? <a href="register.html">สมัครสมาชิกที่นี่</a>
         </div>
     </div>
